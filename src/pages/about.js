@@ -8,10 +8,10 @@ import Info from '../components/Home/info'
 
 
 
-const IndexPage = ({data}) => (
+const AboutPage = ({data}) => (
   <Layout>
-    <SEO title="Home" />
-   <BackgroundSection img={data.img.childImageSharp.fluid} title="Coffee from Stefan" styleClass="default-background"/>
+    <SEO title="About" />
+   <BackgroundSection img={data.img.childImageSharp.fluid} title="About us" styleClass="default-background"/>
 
     <Info />
     
@@ -20,7 +20,7 @@ const IndexPage = ({data}) => (
 
 export const query =graphql`
 {
-  img:file(relativePath:{eq:"default-background.jpeg"}) {
+  img:file(relativePath:{eq:"about-background.jpeg"}) {
     childImageSharp{
       fluid{
         ...GatsbyImageSharpFluid_tracedSVG
@@ -30,4 +30,4 @@ export const query =graphql`
 }
 `
 
-export default IndexPage
+export default AboutPage
