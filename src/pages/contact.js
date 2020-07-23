@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '/Users/stefanhancar/Downloads/coffeshop/src/components/global/Title'
+import Title from '../components/global/Title'
 import Layout from '../components/layout'
 
 
