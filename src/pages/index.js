@@ -11,7 +11,7 @@ import Info from '../components/Home/info'
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-   <BackgroundSection img={data.img.childImageSharp.fluid} title="Coffee from Stefan" styleClass="default-background"/>
+   <BackgroundSection img={data.img.childImageSharp.fluid} title="Coffee from Stefan" />
 
     <Info />
     
